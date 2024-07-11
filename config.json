@@ -1,0 +1,10 @@
+{
+  "bind": "127.0.0.1:8181",
+  "timeout": 600,
+  "proxy_url": "",
+  "real_logout": false,
+  "cookie_secret": "1234567890abcdefghijklmnopqrstuv",
+  "openai_base_url": "https://api.openai.com/v1",
+  "openai_api_key": "sk-xxx",
+  "moderation_enabled": false
+}
