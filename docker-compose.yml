@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  fuclaude:
+    image: pengzhile/fuclaude
+    ports:
+      - "127.0.0.1:8181:8181"
+    environment:
+      - FUCLAUDE_BIND=0.0.0.0:8181
+      - FUCLAUDE_TIMEOUT=600
+      - FUCLAUDE_PROXY_URL=
+      - FUCLAUDE_REAL_LOGOUT=false
+      - FUCLAUDE_COOKIE_SECRET=1234567890abcdefghijklmnopqrstuv
+      - FUCLAUDE_OPENAI_BASE_URL=https://api.openai.com/v1
+      - FUCLAUDE_OPENAI_API_KEY=sk-xxx
+      - FUCLAUDE_MODERATION_ENABLED=false
+      - FUCLAUDE_SIGNUP_ENABLED=false
+      - FUCLAUDE_SHOW_SESSION_KEY=false
+    restart: unless-stopped
